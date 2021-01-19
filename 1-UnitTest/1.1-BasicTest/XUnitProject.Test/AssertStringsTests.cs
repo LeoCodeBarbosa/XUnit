@@ -4,7 +4,8 @@ namespace XUnitProject.Test
 {
     public class AssertStringsTests
     {
-        [Fact]
+        [Fact (DisplayName = "JoinNames_ReturnFullName")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void StringsTools_JoinNames_ReturnFullName()
         {
             // Arrange
@@ -19,7 +20,8 @@ namespace XUnitProject.Test
 
 
 
-        [Fact]
+        [Fact (DisplayName = "JoinNames_ShouldIgnoreCase")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void StringsTools_JoinNames_ShouldIgnoreCase()
         {
             // Arrange
@@ -34,7 +36,8 @@ namespace XUnitProject.Test
 
 
 
-        [Fact]
+        [Fact (DisplayName = "JoinNames_ShouldContainPartsOfName")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void StringsTools_JoinNames_ShouldContainPartsOfName()
         {
             // Arrange
@@ -48,7 +51,8 @@ namespace XUnitProject.Test
         }
 
 
-        [Fact]
+        [Fact (DisplayName = "JoinNames_ShouldStartWith")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void StringsTools_JoinNames_ShouldStartWith()
         {
             // Arrange
@@ -62,7 +66,8 @@ namespace XUnitProject.Test
         }
 
 
-        [Fact]
+        [Fact (DisplayName = "JoinNames_ShouldEndWith")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void StringsTools_JoinNames_ShouldEndWith()
         {
             // Arrange
@@ -76,7 +81,8 @@ namespace XUnitProject.Test
         }
 
 
-        [Fact]
+        [Fact (DisplayName = "JoinNames_ValidatedRegularExpression")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void StringsTools_JoinNames_ValidatedRegularExpression()
         {
             // Arrange

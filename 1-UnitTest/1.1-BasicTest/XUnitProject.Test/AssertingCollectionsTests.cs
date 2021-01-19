@@ -4,7 +4,8 @@ namespace XUnitProject.Test
 {
     public class AssertingCollectionsTests
     {
-        [Fact]
+        [Fact (DisplayName = "Skills ShouldNotHaveEmptySkills")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Employe_Skills_ShouldNotHaveEmptySkills()
         {
             // Arrange & Act
@@ -14,7 +15,8 @@ namespace XUnitProject.Test
             Assert.All(employe.Skills, skills => Assert.False(string.IsNullOrWhiteSpace(skills)));
         }
 
-        [Fact]
+        [Fact (DisplayName = "Skills JuniorShouldHaveBasicSkills")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Employe_Skills_JuniorShouldHaveBasicSkills()
         {
             // Arrange & Act
@@ -25,7 +27,8 @@ namespace XUnitProject.Test
         }
 
 
-        [Fact]
+        [Fact (DisplayName = "Skills JuniorShouldNotHaveAdvancedSkills")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Employe_Skills_JuniorShouldNotHaveAdvancedSkills()
         {
             // Arrange & Act
@@ -36,7 +39,8 @@ namespace XUnitProject.Test
         }
 
 
-        [Fact]
+        [Fact (DisplayName = "Skills SeniorShouldHaveAllSkills")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Employe_Skills_SeniorShouldHaveAllSkills()
         {
             // Arrange & Act

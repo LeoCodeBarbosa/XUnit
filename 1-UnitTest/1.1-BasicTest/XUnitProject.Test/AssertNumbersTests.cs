@@ -4,7 +4,8 @@ namespace XUnitProject.Test
 {
     public class AssertNumbersTests
     {
-        [Fact]
+        [Fact (DisplayName = "Sum_ShouldNotBeEqual")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Calculator_Sum_ShouldBeEqual()
         {
             // Arrange
@@ -17,7 +18,8 @@ namespace XUnitProject.Test
             Assert.Equal(3, result);
         }
 
-        [Fact]
+        [Fact (DisplayName = "Sum_ShouldNotBeEqual")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Calculator_Sum_ShouldNotBeEqual()
         {
             // Arrange
@@ -27,7 +29,7 @@ namespace XUnitProject.Test
             var result = calculator.Sum(1.13123123123, 2.2312313123);
 
             // Assert
-            Assert.NotEqual(3.3, result, 1);
+            Assert.NotEqual(expected: 3.3, actual: result, precision: 1);
         }
     }
 }

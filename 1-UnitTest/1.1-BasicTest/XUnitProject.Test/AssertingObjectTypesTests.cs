@@ -7,7 +7,8 @@ namespace XUnitProject.Test
 {
     public class AssertingObjectTypesTests
     {
-        [Fact]
+        [Fact (DisplayName = "ShouldReturnTypeOfEmploye")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void EmployeFactory_Create_ShouldReturnTypeOfEmploye()
         {
             // Arrange & Act
@@ -17,7 +18,8 @@ namespace XUnitProject.Test
             Assert.IsType<Employe>(employe);
         }
 
-        [Fact]
+        [Fact (DisplayName = "ShouldReturnPersonTypeDerivation")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void EmployeFactory_Create_ShouldReturnPersonTypeDerivation()
         {
             // Arrange & Act

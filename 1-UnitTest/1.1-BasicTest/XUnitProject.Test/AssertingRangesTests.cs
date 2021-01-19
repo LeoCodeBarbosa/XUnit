@@ -7,13 +7,14 @@ namespace XUnitProject.Test
 {
     public class AssertingRangesTests
     {
-        [Theory]
+        [Theory (DisplayName = "SalaryRangeShouldRespectLevel")]
         [InlineData(700)]
         [InlineData(1500)]
         [InlineData(2000)]
         [InlineData(7500)]
         [InlineData(8000)]
         [InlineData(15000)]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Employe_Salary_SalaryRangeShouldRespectProfessionalLevel(double salary)
         {
             // Arrange & Act

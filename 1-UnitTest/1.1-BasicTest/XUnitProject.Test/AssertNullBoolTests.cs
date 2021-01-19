@@ -4,7 +4,8 @@ namespace XUnitProject.Test
 {
     public class AssertNullBoolTests
     {
-        [Fact]
+        [Fact (DisplayName = "NickName ShouldNotBeNullOrEmpty")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Employe_Name_ShouldNotBeNullOrEmpty()
         {
             // Arrange & Act
@@ -14,7 +15,8 @@ namespace XUnitProject.Test
             Assert.False(string.IsNullOrEmpty(employe.Name));
         }
 
-        [Fact]
+        [Fact (DisplayName = "NickName ShouldNotHaveNickName")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Employe_NickName_ShouldNotHaveNickName()
         {
             // Arrange & Act

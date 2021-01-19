@@ -5,7 +5,8 @@ namespace XUnitProject.Test
 {
     public class AssertingExceptionsTests
     {
-        [Fact]
+        [Fact (DisplayName = "ShouldReturnErrorDivideByZero")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Calculator_Divide_ShouldReturnErrorDivideByZero()
         {
             // Arrange
@@ -16,7 +17,8 @@ namespace XUnitProject.Test
         }
 
 
-        [Fact]
+        [Fact (DisplayName = "ShouldReturnSalaryLessThanAllowed")]
+        [Trait("Asserts", "Asserts Example Tests")]
         public void Employe_Salary_ShouldReturnSalaryLessThanAllowed()
         {
             // Arrange & Act & Assert
